@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourav Janyani</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    
+  </head>
+  <body>
+    <header class=" shadow-sm " id="header">
+      <nav class="nav w-100 d-flex justify-content-around fs-5 fw-bold pt-3">
+        <a href="#" class="nav_logo text-decoration-none text-dark me-5 pe-5" >Gourav</a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list row" style="list-style-type:none;">
+            <li class="nav_item col mx-3 p-0">
+              <a href="#home" class="nav_link text-decoration-none text-dark">
+               Home
+              </a>
+            </li>
+            <li class="nav_item col mx-3 p-0">
+              <a href="#about" class="nav_link text-decoration-none text-dark">
+                About
+              </a>
+            </li><li class="nav_item col mx-3 p-0">
+              <a href="#skills" class="nav_link text-decoration-none text-dark">
+                Skills
+              </a>
+            </li><li class="nav_item col mx-3 p-0 ">
+              <a href="#works" class="nav_link text-decoration-none text-dark">
+                Works
+              </a>              
+            </li>
+            <!-- <li class="nav_item col mx-3 p-0 ">
+              <a href="#works" class="nav_link text-decoration-none text-dark">
+                Portfolio
+              </a>
+            </li> -->
+            <li class="nav_item col mx-3 p-0 ">
+              <a href="#testimonial" class="nav_link text-decoration-none text-dark">
+                Testimonial
+              </a>
+            </li><li class="nav_item col mx-3 p-0">
+              <a href="#contact" class="nav_link text-decoration-none text-dark">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+    <section class="home section" id="home">
+      <!-- <div class="home_container container grid">
+        <div class="home_content grid">
+          <div class="home_social">
+            <a
+              href="https://www.linkedin.com/in/gourav-janyani/"
+              class="home__social-icon"
+              target="_blank"
+              ><i class="bx bxl-linkedin fs-3"></i
+            ></a>
+            <a
+              href="https://github.com/gouravjanyani"
+              target="_blank"
+              class="home__social-icon"
+              ><i class="bx bxl-github fs-3"></i
+            ></a>
+            <a href="https://twitter.com/GouravJanyani" target="_blank" class="home_social-icon">
+              <i class='bx bxl-twitter fs-3' ></i>
+            </a>
+          </div>
+          <div class="home_img">
+            <svg
+            class="home__blob h-100"
+            style="fill: hsl(224, 89%, 60%); width: 50vh"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+
+              <image
+                class="home_blob-img"
+                style="width: 40rem"
+                x="-70"
+                y="50"
+                xlink:href="images/Gourav transparent bg img.png"
+                alt="me"
+              />
+            </g>
+          </svg>
+          </div>
+          <div class="home_data">
+            <h1 class="home_title">Hello, I'm <br /><span
+              style="color: hsl(224, 89%, 60%)"
+              class="fw-normal"
+              >Gourav Janyani</span
+            ></h1>
+            <h3>I'm a Full Stack Web Developer.</h3>
+            <a
+            href="#contact"
+            class="btn text-white mt-5 px-4 py-2 button button-flex"
+            style="background: hsl(224, 89%, 60%); border-radius: 7px;"
+            >
+            <div class="d-flex align-items-center">
+            Contact <i class='bx bx-send fs-5 ms-2 button-icon'>
+            </i>
+          </div></a
+          >
+          </div>
+        </div>
+        <div class="home_scroll">
+          <a href="about" class="home_scroll-button button-flex">
+            <i class='bx bx-mouse'></i>
+          </a>
+        </div>
+      </div> -->
+
+      <!-- old home page -->
+      <div class="container d-flex flex-wrap justify-content-around">
+        <div class="textBx lh-lg">
+          <div class="mb-2">
+            <a
+              href="https://www.linkedin.com/in/gourav-janyani/"
+              class="home__social-icon"
+              target="_blank"
+              ><i class="bx bxl-linkedin fs-3"></i
+            ></a>
+            <a
+              href="https://github.com/gouravjanyani"
+              target="_blank"
+              class="home__social-icon"
+              ><i class="bx bxl-github fs-3"></i
+            ></a>
+          </a>
+          <a href="https://twitter.com/GouravJanyani" target="_blank" class="home_social-icon">
+            <i class='bx bxl-twitter fs-3' ></i>
+          </a>
+          </div>
+          <h2>
+            Hello, I'm <br /><span
+              style="color: hsl(224, 89%, 60%)"
+              class="fw-normal"
+              >Gourav Janyani</span
+            >
+          </h2>
+          <h3>I'm a Full Stack Web Developer.</h3>
+          <a
+            href="#contact"
+            class="btn text-white mt-5 px-4 py-2"
+            style="background: hsl(224, 89%, 60%); border-radius: 7px;"
+            >
+            <div class="d-flex align-items-center">
+            Contact <i class='bx bx-send fs-5 ms-2'>
+            </i>
+          </div></a
+          >
+        </div>
+        <div class="">
+          <svg
+            class="home__blob h-100"
+            style="fill: hsl(224, 89%, 60%); width: 50vh"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+
+              <image
+                class="home_blob_img"
+                style="width: 40rem"
+                x="-70"
+                y="50"
+                xlink:href="images/Gourav transparent bg img.png"
+                alt="me"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="" id="about">
+      <h2 class="fw-bold text-center">About me</h2>
+      <div class="text-muted text-center">My introduction</div>
+      <div class="container d-flex flex-wrap justify-content-around ">
+        <img
+          class="mt-5"
+          style=" width: 20rem; border-radius: 10px"
+          src="images/IMG_20210308_194228_833.jpg"
+          alt="me"
+        />
+
+        <div class="mt-5">
+          
+            Web developer, with extensive knowledge <br />
+            and internship experience, working in web <br />
+            technologies and delivering quality work.
+
+            <div class="d-flex flex-wrap justify-content-between ">
+              <div class="text-center">
+                <h4 class="fw-bold mt-3">08+</h4>
+                <div>Months</div>
+                <div>experience</div>
+  
+              </div>
+              <div class="text-center">
+                <h4 class="fw-bold mt-3">03+</h4>
+                <div>Completed</div>
+                <div>projects</div>
+  
+              </div>
+              <div class="text-center">
+                <h4 class="fw-bold mt-3">03+</h4>
+                <div>Internships</div>
+                
+  
+              </div>
+
+            </div>
+            <a
+            href="#about"
+            class="btn text-white mt-5 px-4 py-2"
+            style="background: hsl(224, 89%, 60%); border-radius: 7px;"
+            >
+            <div class="d-flex align-items-center">
+            Download CV 
+            <i class='bx bx-download fs-5 ms-2'></i>
+          </div> 
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="" id="skills">
+      <h2 class="fw-bold text-center">Skills</h2>
+      <div class="text-muted text-center mb-5 ">My technical level</div>
+      <div class="d-flex flex-wrap justify-content-around  ">
+        <!-- Frontend -->
+        <div class="mt-5" style="width: 20rem">
+        <div class="fs-5 mb-3 d-flex align-items-center">
+          <i class='bx bx-code-curly fw-bold me-2' style="color: hsl(224, 89%, 60%)"></i>
+          Frontend developer
+        </div>
+        <div class="mb-3 text-muted"> 
+          HTML
+          <i class='bx bxl-html5' ></i>
+          <div class="float-end">90%</div>
+          <div class="progress " style="height: 5px;">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
+        </div>
+        <div class="mb-3 text-muted"> 
+          CSS
+          <i class='bx bxl-css3 ' ></i>
+          <div class="float-end">80%</div>
+          <div class="progress " style="height: 5px;">
+            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
+        </div>
+        <div class="mb-3 text-muted"> 
+          JavaScript
+          <i class='bx bxl-javascript' ></i>
+          <div class="float-end">60%</div>
+          <div class="progress " style="height: 5px;">
+            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
+        </div>
+        <div class="mb-3 text-muted"> 
+          jQuery
+          <i class='bx bxl-jquery' ></i>
+          <div class="float-end">50%</div>
+          <div class="progress " style="height: 5px;">
+            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
+        </div>
+        <div class="mb-3 text-muted"> 
+          bootstrap 5
+          <i class='bx bxl-bootstrap' ></i>
+          <div class="float-end">85%</div>
+          <div class="progress " style="height: 5px;">
+            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
+        </div>
+        <div class="mb-3 text-muted"> 
+          SASS
+          <i class='bx bxl-sass ' ></i>
+          <div class="float-end">65%</div>
+          <div class="progress " style="height: 5px;">
+            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
+        </div>
+      </div>
+        <!-- Backend developer -->
+        <div class="mt-5" style="width: 20rem">
+          <div class="fs-5 mb-3 d-flex align-items-center">
+            <i class='bx bx-shape-square fw-bold fs-4 me-2' style="color: hsl(224, 89%, 60%);"></i>
+            
+            Backend developer
+          </div>
+          <div class="mb-3 text-muted"> 
+            Java
+            <svg style="margin-top: -10px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M9.37 17.51c-3.09.86 1.87 2.64 5.8 1a7.18 7.18 0 0 1-1.1-.54 11.59 11.59 0 0 1-4.16.18c-1.31-.15-.54-.64-.54-.64zm5.33-1.68a16.27 16.27 0 0 1-5.36.26c-1.31-.14-.45-.77-.45-.77-3.4 1.12 1.89 2.4 6.64 1a2.25 2.25 0 0 1-.83-.49zm1.82-9.73s-6.87 1.71-3.59 5.49a1.47 1.47 0 0 1-.25 2.12s2.46-1.27 1.33-2.86-1.86-2.22 2.51-4.75z"></path><path d="M18.13 19.14s.56.46-.63.82c-2.27.69-9.43.9-11.42 0-.72-.31.62-.74 1-.83a2.54 2.54 0 0 1 .69-.08c-.8-.56-5.15 1.1-2.21 1.58 8.05 1.37 14.64-.56 12.57-1.49zm-2.76-4.88a7 7 0 0 1 .92-.49s-1.51.27-3 .4a28.11 28.11 0 0 1-4.82.05C6.09 13.91 9.74 13 9.74 13a6.81 6.81 0 0 0-3.16.75c-2.06 1.03 5.09 1.48 8.79.51zm.91 2.44a.39.39 0 0 1-.08.09c5-1.32 3.18-4.65.78-3.81a.71.71 0 0 0-.33.25s.14-.05.43-.12c1.22-.25 2.92 1.63-.8 3.59zM12 13c-.74-1.67-3.26-3.14 0-5.71C16.09 4.08 14 2 14 2c.84 3.31-3 4.31-4.34 6.37-.93 1.41.47 2.92 2.34 4.63z"></path><path d="M16.41 21.32a29.75 29.75 0 0 1-9.14.14s.46.38 2.84.53c3.61.23 9.15-.12 9.29-1.83 0 0-.26.64-2.99 1.16z"></path></svg>
+            <div class="float-end">90%</div>
+            <div class="progress " style="height: 5px;">
+              <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              </div>
+              </div>
+          </div>
+          
+        </div>
+        <!-- Designer -->
+        <div class="mt-5" style="width: 20rem">
+          <div class="fs-5 mb-3 d-flex align-items-center">
+            
+            <i class='bx bx-outline fw-bold fs-4 me-2' style="color: hsl(224, 89%, 60%);"></i>
+            
+            Designer
+          </div>
+          <div class="mb-3 text-muted"> 
+            Figma
+            <i class='bx bxl-figma'></i>
+            <div class="float-end">60%</div>
+            <div class="progress " style="height: 5px;">
+              <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="works" class="">
+      <h2 class="fw-bold text-center">Qualification</h2>
+      <div class="text-muted text-center">My introduction</div>
+      <div class=" d-flex flex-column justify-content-center align-items-center mt-5">
+        <div class="d-flex flex-row justify-content-around w-50">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button   group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary d-flex align-center px-4" for="btnradio1"><i class='fs-4 bx bx-briefcase me-2'></i>  Experience</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary d-flex align-center px-4" for="btnradio2"><i class='fs-4 bx bxs-graduation me-2' ></i> Education</label>
+          
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div id="timeline" class="timeline">
+            <ul class="timelineul">
+              <li class="timeline-item">
+                <div class="timeline-content">
+                  <h1><span class="fw-bold">MERAEMI</span> | Java Development Intern</h1>
+                  
+                  <p class="text-muted">Feb 2022 - Apr 2022</p>
+                  <!-- <ul class="text-muted description">
+                    <li>Developed version-2.1 of MeraEMI-messaging-service API.</li>
+                    <li>Optimized code and restructured the project.</li>
+                  </ul> -->
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-content">
+                  <h1><span class="fw-bold">HELLOSKILLS</span> | Web Development Trainee</h1>
+                  <p class="text-muted">Nov 2021 – Feb 2022</p>
+                  <!-- <ul class="text-muted description">
+                    <li>Developed HelloSkills Career Assessment Portal (web application).</li>
+                    <li>Resulted in a 20% increase in overall website traffic.</li>
+                  </ul> -->
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-content">
+                  <h1><span class="fw-bold">THE KABADIWALA</span> | Software Engineer Intern</h1>
+                  <p class="text-muted">Aug 2021 – Nov 2021</p>
+                  <!-- <ul class="text-muted description">
+                    <li>Designed and added a ”Pickup Session section” that contained 6 inner pages,
+                      one of which required integrating Google maps API to keep track of pickup
+                      session activities using a timeline and to know the vehicle’s current location.</li>
+                    
+                  </ul> -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Banner_contact">
+      <div class=" bg-primary d-flex flex-row justify-content-around align-items-center overflow-hidden" style="border-radius: 20px">
+        
+        <div class=""><img
+          style="width: 30rem; transform: translate( 20%);margin-left:-10rem;margin-top: 5rem"
+          src="images/Screenshot_2022-11-19_at_2.51.09_PM-removebg-preview.png"
+        /></div>
+        <div class=""> 
+          <h3 class="text-white text-center">You have a new project</h3>
+          <p class="text-center text-white">Contact me now.</p>
+          <a
+            href="#contact"
+            class="btn text-white mt-5 px-4 py-2 "
+            style="background: white; border-radius: 7px;margin-left: 6
+            rem;"
+            >
+            <div class="d-flex align-items-center fw-bold" style="color:hsl(224, 89%, 60%) ">
+            Contact <i class='bx bx-send fs-5 ms-2'>
+            </i>
+          </div>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="" id="testimonial">
+      <h2 class="fw-bold text-center">Testimonial</h2>
+      <div class="text-muted text-center">My client saying</div>
+
+      <div class="testimonial_container container swiper-container swiper ">
+        <div class="testimonial_1 swiper-wrapper">
+
+          <div class="testimonial_content swiper-slide">
+            <div class="testimonial_data">
+              <div class="testimonial_header mb-3">
+                <img width="100em" src="images/1572803609562.jpeg" alt="" class="testimonial_img me-3">
+                <div>
+                    <h3 class="testimonial_name fs-5">Sreejay S</h3>
+                    <span class="testimonial_client text-muted">Lead Technical Specialist at Checklist Solutions Pvt Ltd</span>
+                </div>
+              </div>
+              <div>
+                <i class='bx bx-star testimonial_icon-star text-primary' ></i>
+                <i class='bx bx-star testimonial_icon-star text-primary' ></i>
+                <i class='bx bx-star testimonial_icon-star text-primary ' ></i>
+                <i class='bx bx-star testimonial_icon-star text-primary' ></i>
+                <i class='bx bx-star testimonial_icon-star text-primary' ></i>
+              </div>
+            </div>
+            <p class="testimonial_desciption mb-2">Gourav Janyani is a motivated, forward-thinking and intelligent intern who has lots of knowledge in his field. He is ready to deal with difficult situations and solve the problems on time. His leadership and organizational skills have been invaluable to the company. He denotes a lot of analytical capability and willingness for both his personal & professional development. I certainly would recommend him as intern.</p>
+          </div>
+
+
+          <!---testimonial 2 --->
+            <div class="testimonial_content swiper-slide">
+              <div class="testimonial_data mb-3">
+                <div class="testimonial_header mb-3">
+                  <img width="100em" src="images/1648899311899.jpeg" alt="" class="testimonial_img me-3">
+                  <div>
+                      <h3 class="testimonial_name fs-5">Ayush Verma</h3>
+                      <span class="testimonial_client text-muted">Founder & CEO at HelloSkills</span>
+                  </div>
+                </div>
+                <div>
+                  <i class='bx bx-star testimonial_icon-star text-primary' ></i>
+                  <i class='bx bx-star testimonial_icon-star text-primary ' ></i>
+                  <i class='bx bx-star testimonial_icon-star text-primary' ></i>
+                  <i class='bx bx-star testimonial_icon-star text-primary' ></i>
+                  <i class='bx bx-star testimonial_icon-star text-primary' ></i>
+                </div>
+              </div>
+              <p class="testimonial_desciption mb-2">Have worked and mentored Gourav while working with him during his tenure in HelloSkills. He truly is a stand out talent, highly ethical and loves his way around coding- qualities that you come around rarely. Highly recommend.</p>
+            </div>
+
+            
+        </div>
+        
+        <div class="swiper-pagination swiper-pagination-testimonial"></div> 
+        
+      </div>
+    </section>
+    <section class="contact section" id="contact">
+      <h2 class="fw-bold text-center">Contact Me</h2>
+      <div class="text-muted text-center">Get in touch</div>
+      <div class="contact_container container d-flex flex-wrap justify-content-around">
+        <div class="d-flex flex-column justify-content-center mt-5">
+          <div class="contact_information mb-3 ">
+            
+            <i class='bx bx-phone contact_icon me-2'></i>
+            <div>
+              <div class="contact_title h4">Call Me</div>
+              <span class="contact_subtitle text-muted">+91-9713344392</span>
+            </div>
+          </div>
+
+          <div class="contact_information mb-3 d-flex align-items-center">
+            <i class='bx bx-envelope contact_icon me-2' ></i>
+            <div>
+              <div class="contact_title h4 ">Email</div>
+              <span class="contact_subtitle text-muted">gouravjanyani21@gmail.com</span>
+            </div>
+          </div>
+
+          
+
+        </div>
+        <form action="" class="contact_form grid">
+          <div class="contact_inputs grid">
+            <div class="contact_content mb-2">
+              <label for="" class="contact_label">Name</label>
+              <input type="text" class="contact_input">
+            </div>
+            <div class="contact_content mb-2">
+              <label for="" class="contact_label">Email</label>
+              <input type="email" class="contact_input">
+            </div>
+          </div>
+          <div class="contact_content mb-2">
+            <label for="" class="contact_label">Project</label>
+            <input type="text" class="contact_input">
+          </div>
+          <div class="contact_content">
+            <label for="" class="contact_label">Message</label>
+            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+          </div>
+          <div>
+            
+            <a
+            href="#"
+            class="btn text-white mt-5 px-4 py-2 button button--flex"
+            style="background: hsl(224, 89%, 60%); border-radius: 7px;"
+            >
+            <div class="d-flex align-items-center">
+            Send Message <i class='bx bx-send fs-5 ms-2 button_icon'>
+            </i>
+          </div></a
+          >
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <footer class="footer bg-primary text-dark">
+      <div class="footer_bg">
+        <div class="footer_container container d-flex flex-wrap justify-content-around  ">
+          <div>
+            <h1 class="footer_title mb-3">Gourav</h1>
+            <span class="footer_subtitle">Full Stack Developer</span>
+          </div>
+          <ul class="footer_links list-unstyled">
+            <li>
+              <a href="#services" class="footer_link">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer_link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer_link">Contact me</a>
+            </li>
+          </ul>
+          <div class="footer_socials">
+            <a href="https://www.instagram.com/gourav_janyani/" target="_blank" class="footer_social me-2 text-decoration-none">
+              <i class='bx bxl-instagram text-white' ></i>
+            </a>
+            <a href="https://twitter.com/GouravJanyani" target="_blank" class="footer_social me-2 text-decoration-none">
+              <i class='bx bxl-twitter text-white' ></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gourav-janyani/" target="_blank" class="footer_social me-2 text-decoration-none">
+              <i class='bx bxl-linkedin-square text-white' ></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer_copy mt-3">Gourav Janyani &#169; 2022</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="ext.js"></script>
+  </body>
+</html>
