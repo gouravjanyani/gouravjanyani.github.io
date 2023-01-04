@@ -531,37 +531,34 @@
           
 
         </div>
-        <form action="" class="contact_form grid">
+        <div class="alert">Your message has been sent</div>
+        <form action="" class="contact_form grid" id="contactForm">
           <div class="contact_inputs grid">
             <div class="contact_content mb-2">
-              <label for="" class="contact_label">Name</label>
-              <input type="text" class="contact_input">
+              <label class="contact_label">Name</label>
+              <input class="contact_input" type="text" name="name" id="name" required">
             </div>
             <div class="contact_content mb-2">
-              <label for="" class="contact_label">Email</label>
-              <input type="email" class="contact_input">
+              <label class="contact_label">Email</label>
+              <input class="contact_input" type="email" name="email" id="email" required>
             </div>
           </div>
           <div class="contact_content mb-2">
-            <label for="" class="contact_label">Project</label>
-            <input type="text" class="contact_input">
+            <label  class="contact_label">Project</label>
+            <input type="text" class="contact_input" name="project" id="project">
           </div>
           <div class="contact_content">
-            <label for="" class="contact_label">Message</label>
-            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+            <label class="contact_label">Message</label>
+            <textarea name="message" rows="5" id="message" class="contact_input"></textarea>
           </div>
           <div>
             
-            <a
-            href="#"
-            class="btn text-white mt-5 px-4 py-2 button button--flex"
-            style="background: hsl(224, 89%, 60%); border-radius: 7px;"
-            >
-            <div class="d-flex align-items-center">
+         
+            <button type="submit" style="background: hsl(224, 89%, 60%); border-radius: 7px;" class="btn text-white mt-5 px-4 py-2 button button--flex d-flex align-items-center">
             Send Message <i class='bx bx-send fs-5 ms-2 button_icon'>
             </i>
-          </div></a
-          >
+          </button>
+          
           </div>
         </form>
       </div>
@@ -602,6 +599,7 @@
       </div>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="ext.js"></script>
   </body>

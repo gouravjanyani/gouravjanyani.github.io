@@ -1,3 +1,67 @@
+//Initialize firebase 
+const firebaseConfig = {
+  apiKey: "AIzaSyAM4ZAS3HC3sNyR4X63ptFdoLcVRtZLIBk",
+  authDomain: "portfolio-3dea4.firebaseapp.com",
+  databaseURL: "https://portfolio-3dea4-default-rtdb.firebaseio.com",
+  projectId: "portfolio-3dea4",
+  storageBucket: "portfolio-3dea4.appspot.com",
+  messagingSenderId: "957354991334",
+  appId: "1:957354991334:web:5c5b078fdaf7753ce9e527",
+  measurementId: "G-SLYV07K0G5"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var name = getInputVal('name');
+  // var company = getInputVal('company');
+  var email = getInputVal('email');
+  var project = getInputVal('project');
+  var message = getInputVal('message');
+
+  // Save message
+  saveMessage(name, email, project, message);
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+
+  // Clear form
+  document.getElementById('contactForm').reset();
+}
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, project, message){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email: email,
+    project: project,
+    message: message
+  });
+}
+
+// --------------------------------------------------------
+
 let swiperTestimonial = new Swiper(".testimonial_container", {
   cssMode: true,
   loop: true,
