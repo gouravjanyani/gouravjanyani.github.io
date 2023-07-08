@@ -1,0 +1,290 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+:root {
+  --scroll-bar-color: hsl(250, 12%, 90%);
+  --scroll-thumb-color: hsl(250, 12%, 90%);
+  --text-color-light: hsl(250, 8%, 65%);
+
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Adding all my section tag fixed padding */
+section {
+  padding: 80px;
+  height: 100vh;
+}
+
+/* Creating Banner Area in CSS */
+.banner {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #111; */
+  /* background: url(images/Gourav\ transparent\ bg\ img.png); */
+  background-size: 20rem 20rem;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.banner h2 {
+  font-size: 2.5em;
+  color: #444;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.banner h2 span {
+  font-size: 1.2em;
+  /* color: #efefef; */
+}
+
+.banner h3 {
+  /* color: #fff; */
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* .btn {
+  position: relative;
+  background: #hsl(224, 89%, 60%);
+
+  display: inline-block;
+  color: #000;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+} */
+
+header .nav_item:hover {
+  border-bottom: hsl(224, 89%, 60%) 3px solid;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.container {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline-content h1 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.timeline-item .description {
+  list-style: disc;
+}
+
+@media only screen and (min-width: 786px) {
+  .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(224, 89%, 60%);
+  }
+  .timeline ul .timeline-item {
+    width: 50%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .timeline ul .timeline-item:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  .timeline ul .timeline-item:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+  .timeline ul .timeline-item::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: hsl(224, 89%, 60%);
+    border-radius: 50%;
+    top: 0;
+  }
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -14px;
+  }
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -46px;
+  }
+  .timeline ul li:hover:after {
+    background-color: hsl(224, 89%, 60%);
+  }
+}
+
+.testimonial_data,
+.testimonial_header {
+  display: flex;
+}
+
+.testimonial_data {
+  justify-content: space-between;
+}
+
+.testimonial_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.testimonial_name {
+  font-weight: 900;
+}
+
+.swiper-container .swiper-pagination-testimonial {
+  bottom: 0;
+}
+
+.contact_container {
+  row-gap: 3rem;
+}
+.contact_information {
+  display: flex;
+}
+.contact_icon {
+  font-size: 2rem;
+  color: hsl(224, 89%, 60%);
+}
+
+.contact_content {
+  background-color: hsl(250, 70%, 96%);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+.contact_label {
+  font-size: small;
+}
+.contact_input {
+  width: 100%;
+  background-color: hsl(250, 70%, 96%);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+.footer {
+  padding-top: 2rem;
+}
+.footer_container {
+  row-gap: 3.5rem;
+}
+.footer_bg {
+  background-color: hsl(250, 69%, 61%);
+  padding: 2rem 0 3rem;
+}
+.footer_subtitle {
+  font-size: small;
+}
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.footer_link:hover {
+  color: hsl(250, 92%, 85%);
+}
+.footer_social {
+  font-size: 1.25rem;
+}
+.footer_social:hover {
+  color: hsl(250, 92%, 85%);
+}
+.footer_copy {
+  font-size: small;
+  text-align: center;
+  color: hsl(250, 8%, 65%);
+}
+.footer_title,
+.footer_subtitle,
+.footer_link,
+.footer_social {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+
+/* small device */
+
+@media screen and (max-width: 350px) {
+  section {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+    height: 200vh;
+  }
+  footer {
+    height: 50vh;
+  }
+}
+/* @media screen and (max-width: 375px) {
+  section {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+    height: 900%;
+  }
+} */
